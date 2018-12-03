@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exempel 1 - Lektion 7</title>
+    <style>
+      .relative-demo {
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+      .absolute-demo{
+          position: absolute;
+          top: 0;
+          left: 0;
+
+      }
+      .back-to-top{
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="top">Exempel 1 - Lektion 7</h1>
+    <h2>Positionering (egenskapen Position)</h2>
+
+    <h3>Static (default i CCS)</h3>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+      reiciendis itaque laborum dolor quidem esse amet quas. Nemo autem fugit
+      modi unde earum dicta tempora, facilis quas error doloremque fugiat.
+    </div>
+
+    <h3>Relative</h3>
+    <div class="relative-demo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse in
+      aliquam aliquid sint eveniet fuga eius dolores, odit vitae! Quo voluptatum
+      unde eius quas aperiam quos repellat velit tempora.
+    </div>
+
+    <h3>Absolute</h3>
+
+    <div class="absolute-demo">
+      Abosolute Positionering
+    </div>
+
+    <h3>Fixed</h3>
+    <div style="padding-bottom:2000px"></div>
+    <a href="#top" class="back-to-top">top</a>
+  </body>
+</html>

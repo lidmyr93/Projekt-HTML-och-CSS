@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 2</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            align-content: space-between;
+            /* align-items:  */
+            
+            border: 1px dotted purple;
+            height: 300px;
+            width: 500px;
+        }
+        .container > div{
+            background-color: orange;
+            padding: 10px;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .order-start{
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exempel 2</h1>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div class="order-start">Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+    </div>
+    
+</body>
+</html>

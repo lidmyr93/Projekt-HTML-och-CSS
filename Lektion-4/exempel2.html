@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exempel 2</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Contact details</legend>
+      <label
+        >Email:<br />
+        <input type="text" name="email" />
+      </label>
+      <br />
+      <label
+        >Mobile:<br />
+        <input type="text" name="mobile" />
+      </label>
+    </fieldset>
+
+    <p>
+      Please select your favorite music service(s):<br />
+      <input type="checkbox" name="service" value="itunes" checked="checked" />
+      iTunes <input type="checkbox" name="service" value=”syntaxfm"> Syntax.fm
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+    </p>
+
+    <h2>Dropdown listor</h2>
+    <p>What device do you listen to music on?</p>
+    <select name="devices">
+      <option value="ipod">iPod</option>
+      <option value="radio">Radio</option>
+      <option value="computer" selected>Computer</option>
+    </select>
+
+    <h2>Datumfält</h2>
+    <label for="departure">Departure date:</label>
+    <input id="departure" type="date" name="depart" />
+    <input type="submit" value="Submit" />
+
+    <h2>Attributet disabled</h2>
+    <form>
+      First name: <input type="text" name="firstname" />
+      <input type="submit" disabled />
+    </form>
+
+    <h2>Attributet required</h2>
+    <form>
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" required />
+      <input type="submit" value="Send" />
+    </form>
+
+    <h2>Datalist</h2>
+    <input list="browsers" name="browser" />
+    <datalist id="browsers">
+      <option value="Internet Explorer"> </option>
+      <option value="Firefox"> </option>
+      <option value="Chrome"> </option>
+      <option value="Opera"> </option>
+      <option value="Safari"> </option>
+    </datalist>
+
+    <h2>Range och output</h2>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0<input type="range" id="a" name="a" value="0" />100 + 0<input
+        type="range"
+        id="b"
+        name="b"
+        value="0"
+      />100 = <output name="x" for="a b">0</output>
+    </form>
+  </body>
+</html>

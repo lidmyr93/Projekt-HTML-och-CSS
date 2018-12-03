@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <title>Övning 2</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: Black;
+            text-align: center;
+            position: relative;
+        }
+        table{
+            border: 5px solid black;
+            width: 50%;
+        
+        }
+        th,td{
+            border: 1px solid gray;
+            height: 50px;
+            padding: 5px;
+        }
+        
+        tr:hover {background-color:gray;}
+    </style>
+</head>
+<body>
+    <h1 id="top" title="Detta är huvudrubiken"><b>Min hemsida<sup>@</sup><sub>@</sub></b></h1>
+    <hr>
+    <p>
+        <strong><u>Denna</u></strong> hemsida ska följa med hela <mark>HTML och CSS</mark>
+         kursen och 
+        kommer att ändras hela tiden.
+
+    </p>
+    <hr>
+   <h2>Min lista över alla element</h2>
+   <table>
+       <tr>
+           <td><a href="#fys">Fysiska element</a></td>
+           <td><a href="#sem">Semantiska element</a></td>
+           <td><a href="#list">Listor</a></td>
+           <td><a href="#table">Tabeller</a></td>
+           <td><a href="#attr">Attribut</a></td>
+           
+       </tr>
+   </table>
+<table id="fys">
+    <tr>
+        <th colspan="3">Fysiska Element</th>
+    </tr>
+    <tr>
+        <th scope="row">&lt;h1&gt;</th>
+        <td>Huvudrubkrik 1-6.</td>
+        <td><a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;p&gt;</th>
+        <td>Ett stycke</td>
+        <td><a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;br&gt;</th>
+        <td>Radbrytning.</td>
+        <td><a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;b&gt;</th>
+        <td>Bold fet text</td>
+        <td><a href="https://www.w3schools.com/tags/tag_b.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;i&gt;</th>
+        <td>Italic kursiv text</td>
+        <td><a href="https://www.w3schools.com/tags/tag_i.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;sup&gt;</th>
+        <td>Upphöjd</td>
+        <td><a href="https://www.w3schools.com/tags/tag_sup.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;sub&gt;</th>
+        <td>Nersänkt</td>
+        <td><a href="https://www.w3schools.com/tags/tag_sub.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;u&gt;</th>
+        <td>Understryken text</td>
+        <td><a href="https://www.w3schools.com/tags/tag_u.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;small&gt;</th>
+        <td>Small text (mindre text)</td>
+        <td><a href="https://www.w3schools.com/tags/tag_small.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;s&gt;</th>
+        <td>Genomstruken text</td>
+        <td><a href="https://www.w3schools.com/tags/tag_s.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;hr&gt;</th>
+        <td>Thematic change (linje)</td>
+        <td><a href="https://www.w3schools.com/tags/tag_hr.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;a&gt;</th>
+        <td>Definerar en hyperlink</td>
+        <td><a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>Definerar en bild</td>
+            <td><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+                <th scope="row">&lt;figure&gt;</th>
+                <td>Figure (bild)</td>
+                <td><a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank"> Referens länk</a> </td>
+            </tr>
+            <tr>
+                    <th scope="row">&lt;figcaption&gt;</th>
+                    <td>Figcaption text till (bild)</td>
+                    <td><a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank"> Referens länk</a> </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="#top">Länk till sidans topp</a></td>
+                </tr>
+</table>    
+    <hr>
+    <table id="sem">
+        <tr>
+            <th colspan="3">Semantiska element</th>
+        </tr>
+        <tr>
+            <th scope="row">&lt;em&gt;</th>
+            <td>Kursiv text</td>
+            <td><a href="https://www.w3schools.com/tags/tag_em.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;strong&gt;</th>
+            <td>Fet text</td>
+            <td><a href="https://www.w3schools.com/tags/tag_strong.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;mark&gt;</th>
+            <td>Markeringspenna</td>
+            <td><a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;blockquote&gt;</th>
+            <td>Citat block som hänvisar till andra källor</td>
+            <td><a href="https://www.w3schools.com/tags/tag_blockquote.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;q&gt;</th>
+            <td>Citat text med ""</td>
+            <td><a href="https://www.w3schools.com/tags/tag_q.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;cite&gt;</th>
+            <td>Hänvisar till titlar</td>
+            <td><a href="https://www.w3schools.com/tags/tag_cite.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;del&gt;</th>
+            <td>Stryker över text</td>
+            <td><a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ins&gt;</th>
+            <td>Lägger till text(understrycket)</td>
+            <td><a href="https://www.w3schools.com/tags/tag_ins.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;abbr&gt;</th>
+            <td>Förkortningar</td>
+            <td><a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;address&gt;</th>
+            <td>Adresser</td>
+            <td><a href="https://www.w3schools.com/tags/tag_address.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+                <td colspan="3"><a href="#top">Länk till sidans topp</a></td>
+            </tr>
+    
+    </table>
+        
+        
+    <hr>
+    <table id="list">
+        <tr>
+            <th colspan="3">Listor</th>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ul&gt;</th>
+            <td>Oordnad lista</td>
+            <td><a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ol&gt;</th>
+            <td>Organiserad lista</td>
+            <td><a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;dl&gt;</th>
+            <td>Definitions lista</td>
+            <td><a href="https://www.w3schools.com/tags/tag_dl.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;dt&gt;</th>
+            <td>Listelement i definitions lista</td>
+            <td><a href="https://www.w3schools.com/tags/tag_dt.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;dd&gt;</th>
+            <td>Beskrivning till ett listelement i definitions lista</td>
+            <td><a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+                <td colspan="3"><a href="#top">Länk till sidans topp</a></td>
+            </tr>
+    </table>
+<table id="table">
+    <tr>
+        <th colspan="3">Tabeller</th>
+    </tr>
+    <tr>
+        <th scope="row">&lt;table&gt;</th>
+        <td>Öppnings tagg för tabell</td>
+        <td><a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;tr&gt;</th>
+        <td>Ny rad i tabellen</td>
+        <td><a href="https://www.w3schools.com/tags/tag_tr.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;th&gt;</th>
+        <td>Definerar en header cell i tabellen </td>
+        <td><a href="https://www.w3schools.com/tags/tag_th.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;td&gt;</th>
+        <td>Definerar en standard cell i tabellen </td>
+        <td><a href="https://www.w3schools.com/tags/tag_td.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+            <td colspan="3"><a href="#top">Länk till sidans topp</a></td>
+        </tr>
+</table>
+   <hr>
+<table id="attr">
+    <tr>
+        <th colspan="3">Attribut</th>
+    </tr>
+    <tr>
+        <th scope="row">&lt;a&gt;</th>
+        <td>href</td>
+        <td><a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;a&gt;</th>
+        <td>target</td>
+        <td><a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank"> Referens länk</a> </td>
+    </tr>
+    <tr>
+        <th scope="row">&lt;a&gt;</th>
+        <td>download</td>
+        <td><a href="https://www.w3schools.com/tags/att_a_download.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;meta&gt;</th>
+            <td>charset</td>
+            <td><a href="https://www.w3schools.com/tags/att_meta_charset.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ol&gt;</th>
+            <td>start</td>
+            <td><a href="https://www.w3schools.com/tags/att_ol_start.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ol&gt;</th>
+            <td>type</td>
+            <td><a href="https://www.w3schools.com/tags/att_ol_type.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;ol&gt;</th>
+            <td>reverse</td>
+            <td><a href="https://www.w3schools.com/tags/att_ol_reverse.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>src</td>
+            <td><a href="https://www.w3schools.com/tags/att_img_src.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>alt</td>
+            <td><a href="https://www.w3schools.com/tags/att_img_alt.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>title</td>
+            <td><a href="https://www.w3schools.com/tags/att_img_title.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>width</td>
+            <td><a href="https://www.w3schools.com/tags/att_img_width.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;img&gt;</th>
+            <td>heigth</td>
+            <td><a href="https://www.w3schools.com/tags/att_img_heigth.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;th&gt; / &lt;td&gt;</th>
+            <td>colspan</td>
+            <td><a href="https://www.w3schools.com/tags/att_td_colspan.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;th&gt; / &lt;td&gt;</th>
+            <td>rowspan</td>
+            <td><a href="https://www.w3schools.com/tags/att_td_rowspan.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+            <th scope="row">&lt;th&gt; / &lt;td&gt;</th>
+            <td>scope</td>
+            <td><a href="https://www.w3schools.com/tags/att_td_scope.asp" target="_blank"> Referens länk</a> </td>
+        </tr>
+        <tr>
+                <td colspan="3"><a href="#top">Länk till sidans topp</a></td>
+            </tr>
+        </table>
+       
+   <hr>
+   <p><a href="#top">Länk till sidans topp</a></p>  
+    
+</body>
+</html>

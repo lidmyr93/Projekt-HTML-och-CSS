@@ -1,0 +1,165 @@
+body{
+    background-color:lightgray;
+}
+.page{
+    width: 960px; 
+    height: auto; 
+    margin: 10px auto 10px auto;
+    padding: 0px;
+    border: 4px double #000;
+    border-radius: 6px;
+    
+}
+/*Navigation menu*/
+div nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+}
+div nav ul li{
+    display: inline-block;
+    float: left;
+    
+}
+div nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*End of navigation menu*/
+}
+div nav ul li a:hover{
+    background-color: rgb(97, 88, 88);
+}
+/*Text edit*/
+h1{
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    width: 500px;
+    padding: 0;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    color: blue;
+}
+h3{
+    font-size:1.4em;
+    width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size:1.1em;
+    color: darkslategray;
+    width: 500px;
+    margin: 0 auto;
+}
+/*End of text edit*/
+
+/* Image edit*/
+.image-small{
+    width: 200px;
+    height: 200px;
+}
+.image-medium{
+    width: 300px;
+    height: 400px;
+}
+.image-center{
+    display: block;
+    margin: 0 auto;
+}
+.image-circle-wborder{
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.figcap-center{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* End of image edit */
+/*iframe{
+    display: block;
+    margin: 0 auto;
+}
+*/
+.container{
+    width:900px;
+    height: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+.float-left{
+    width:400px;
+    height: 200px;
+    float: left;
+    
+}
+.right{
+    float: right;
+    height: 300px;
+}
+
+/*Contact form*/
+input[type=text], select, textarea{
+    width:100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+    overflow: auto;
+}
+.form-contact{
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px 2px 0px 2px;
+}
+input[type=submit]{
+    background-color:blue;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius:6px;
+    cursor:pointer;
+
+}
+input[type=submit]:hover{
+    background-color:green;
+}
+/*End of contact form*/
+/* Footer start*/
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 20px 0 0 0;
+    background-color:#333;
+    color: white;
+    text-align: center;
+}
+/* Footer ends*/
+.sidebyside{
+    display: inline-block;
+}
+.divcenter{
+    
+    margin: 10px 50px 10px 50px;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (120% zoom ) */
+}

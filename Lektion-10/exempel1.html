@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 1</title>
+    <style>
+        /* Progressive Enhancment
+           Steg 1
+           Skapa en layout som fungerar i äldre webbläsare
+         */
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+            float: left;
+            padding: 10px;
+            margin: 1%;
+            font-size: 50px;
+            text-align: center;
+            border: 1px solid black;
+            width: 31%;
+        }
+        /* Steg 2. Lägg till en feature query @supports
+        och implementera grid */
+        @supports (display: grid){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr)
+            }
+            .card{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Exempel 1</h1>
+    <H2>Progressive Enhancment</H2>
+
+    <div class="container">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+    </div>
+    
+</body>
+</html>

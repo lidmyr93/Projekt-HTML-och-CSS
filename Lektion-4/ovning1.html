@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Övning 1</title>
+    <style>
+      th {
+        background-color: lightblue;
+      }
+      #sub {
+        text-align: center;
+      }
+      table,th,td{
+          border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+      <form action="ovning1_page.php">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="fullname" /></td>
+      </tr>
+      <tr>
+        <td>Sex</td>
+        <td>
+          <input type="radio" name="gender" value="male" />Male <br />
+          <input type="radio" name="gender" value="female" />Female
+        </td>
+      </tr>
+      <tr>
+        <td>Eye color</td>
+        <td>
+          <select name="eyecolor">
+            <option value="green" selected>green</option>
+            <option value="blue">blue</option>
+            <option value="brown">brown</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Check all that apply</td>
+        <td>
+          <input type="checkbox" />Over 6 feet tall <br />
+          <input type="checkbox" /> Over 200 pounds
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Describe your athletic ability <br />
+          <textarea cols="40" rows="4"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td id="sub" colspan="2">
+          <input type="submit" value="Enter my information" />
+        </td>
+      </tr>
+    </table></form>
+  </body>
+</html>

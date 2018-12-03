@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 960px;
+    min-width: 720px;
+}
+header, footer{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+ul#nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul#nav li{
+        background-color: lightblue;
+        padding: 0px;
+        margin: 10px;
+}
+ul#nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+ul#nav a:hover{
+    background-color:lightsteelblue;
+}
+
+aside{
+    width: 20%;
+    float: left;
+}
+main{
+    width: 80%;
+    float: left;
+}
+.clearfix{
+    clear: both;
+}

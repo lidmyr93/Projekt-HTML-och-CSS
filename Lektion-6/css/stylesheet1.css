@@ -1,0 +1,43 @@
+.postit {
+  display: block;
+  width: 250px;
+  height: auto;
+  min-height: 250px;
+  border: 5px solid black;
+  background-color: #ffc;
+  font-size: 0.9em;
+  padding: 10px;
+  text-align:left;
+  
+}
+p {
+  display: block;
+  width: 400px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    overflow: hidden;
+    background-color: blue;
+    
+}
+li{
+    float: bottom;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    border: 2px solid black;
+}
+li a:hover{
+    background-color: red;
+}
+
