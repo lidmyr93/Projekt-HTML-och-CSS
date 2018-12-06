@@ -1,0 +1,30 @@
+@main-color: rgb(128,128,128);
+@secondary-color:black;
+// Nesting
+#header {
+  color:@main-color/2;
+  .logo {
+    font-size: 3em;
+  }
+  .navigation {
+    font-size: 2em;
+  }
+}
+//Parent selector (&)
+a{
+    text-decoration: none;
+    color: @main-color*1.2;
+    &:hover{
+        color:@secondary-color;
+    }
+}
+
+.btn{
+    color: @main-color;
+    font-size: 2em;
+    border: 1px solid #000;
+    background-color:@secondary-color;
+    &:hover{
+        background-color: blue;
+    }
+}

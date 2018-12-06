@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mobile first</title>
+    <style> 
+        /* General rules */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 2em;
+        }
+        .title, .stats, .board, .score, .controls{
+             border: 1px solid black;
+             border-radius: 20px;
+             padding: 10px;
+             margin-bottom: 10px;
+        }
+        /* Mobile */
+        .container{
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        /* Desktop */
+        /* Media Queries*/
+        @media(min-width:667px){
+            body{
+                background-color: green;
+            }
+        .container{
+            width: 655px;
+            height: 370px;
+            margin: 0 auto;
+        }
+        .title, .stats, .board, .score, .controls{
+             border: 1px solid black;
+             border-radius: 20px;
+             padding: 10px;
+        }
+        .left{
+            float: left;
+            width: 190px;
+            margin-right: 10px;
+        }
+    
+        .right{
+            float: right;
+            width: 600px;
+           
+        }
+        .clearfix{
+            clear:both;
+        }
+        .board{
+            height: 300px;
+        
+        }
+        .title{
+            height: 100px;
+            margin-bottom: 10px;
+            
+        }
+        .stats{
+            height: 190px;
+            margin-bottom: 10px;
+        }
+        @supports(display: grid){
+            /* Nollställa height och width */
+            .title, .stats, .board, .score, .controls{
+                height: initial;
+                width: initial;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 200px 1fr; 
+                grid-template-rows: 100px 1fr 100px;   
+            }
+            .title{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .stats{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .score{
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .board{
+                grid-column: 2;
+                grid-row: 1/ span 2;
+                margin-bottom: 10px;
+            }
+            .controls{
+                grid-column: 2;
+                grid-row: 3;
+                
+            }
+        }
+        }
+        @media(min-width: 813px){
+            body{
+                background-color:blue;
+            }
+            .container{
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        .title, .stats, .board, .score, .controls{
+             border: 1px solid black;
+             border-radius: 20px;
+             padding: 10px;
+        }
+        .left{
+            float: left;
+            width: 190px;
+            margin-right: 10px;
+        }
+    
+        .right{
+            float: right;
+            width: 600px;
+           
+        }
+        .clearfix{
+            clear:both;
+        }
+        .board{
+            height: 300px;
+        
+        }
+        .title{
+            height: 100px;
+            margin-bottom: 10px;
+            
+        }
+        .stats{
+            height: 190px;
+            margin-bottom: 10px;
+        }
+        @supports(display: grid){
+            /* Nollställa height och width */
+            .title, .stats, .board, .score, .controls{
+                height: initial;
+                width: initial;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 200px 1fr; 
+                grid-template-rows: 100px 1fr 100px;   
+            }
+            .title{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .stats{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .score{
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .board{
+                grid-column: 2;
+                grid-row: 1/ span 2;
+                margin-bottom: 10px;
+            }
+            .controls{
+                grid-column: 2;
+                grid-row: 3;
+                
+            }
+        }
+        }
+        
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- Rad 1 -->
+      <div class="title left">Game</div>
+      <div class="board right">Board</div>
+      <div class="stats left">Stats</div>
+
+      <div class="clearfix"></div>
+
+      <!-- Rad 2 -->
+      <div class="score left">Score</div>
+      <div class="controls right">Controls</div>
+
+    </div>
+
+  </body>
+</html>

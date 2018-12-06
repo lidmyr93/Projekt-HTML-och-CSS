@@ -1,0 +1,39 @@
+// Variabler 
+@width: 960px;
+@bg-color:#bababa;
+@main-color: maroon;
+@circle-color: #BADA55;
+
+.container{
+    width: @width;
+    background-color:@bg-color;
+}
+/* Mixins */
+
+.bordered{
+    border-bottom: 2px dotted black;
+    border-top: 2px solid black;
+}
+
+.post{
+    color:@main-color;
+    .bordered;
+}
+// () efter namnet för att inte skicka regeln till css filen
+#circle(@size: 25px){
+    background-color: @circle-color;
+    border-radius: 100%;
+    width: @size;
+    height: @size;
+}
+
+#small-circle{
+    #circle();
+   
+}
+
+#big-circle{
+    #circle(200px);
+    
+}
+
